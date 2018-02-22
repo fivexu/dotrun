@@ -50,7 +50,7 @@ let dotrun=new DotRun('#canvas',{
 
 #### canvasHeight
 * 类型: Number
-* 默认值: 1000
+* 默认值: 300
 * 作用: 设置canvas像素高度
 * 备注: 若想设置为全屏高度,写入字符串'full'
 
