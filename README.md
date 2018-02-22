@@ -46,11 +46,13 @@ let dotrun=new DotRun('#canvas',{
 * 类型: Number
 * 默认值: 1000
 * 作用: 设置canvas像素宽度
+* 备注: 若想设置为全屏宽度,写入字符串'full'
 
 #### canvasHeight
 * 类型: Number
 * 默认值: 1000
 * 作用: 设置canvas像素高度
+* 备注: 若想设置为全屏高度,写入字符串'full'
 
 #### dotsNumber
 * 类型: Number
@@ -112,3 +114,6 @@ let dotrun=new DotRun('#canvas',{
 * 默认值: '#ccc'
 * 作用: 设置动点连线颜色
 * 备注: 目前仅支持十六进制颜色样式
+
+## 演示
+![](https://github.com/fivexu/dotrun/blob/master/dotrun.jpg)

@@ -111,7 +111,6 @@ export default class dotRun {
   
   // 初始化canvas
   initCanvas() {
-    console.log(this.colorRgb('#f00'))
     this.canvas.width = this.canvasSet.width
     this.canvas.height = this.canvasSet.height
     this.canvas.style.backgroundColor = this.canvasSet.canvasBackColor
