@@ -67,6 +67,11 @@ let dotrun=new DotRun('#canvas',{
 * 默认值: 3
 * 作用: 设置动点半径
 
+#### isRandomDots
+* 类型: Boolean
+* 默认值: false
+* 作用: 设置是否随机动点的大小,值为dotsRadius*Math.random()
+
 #### lineLength
 * 类型: Number
 * 默认值: 50
@@ -77,18 +82,40 @@ let dotrun=new DotRun('#canvas',{
 * 类型: Number
 * 默认值: 2
 * 作用: 设置动点X轴方向运动速度,速度为以此为最大的随机数
-* 备注: 若想设置为0,请写成'0',字符串形式
+* 备注: 可以设置为0
 
 #### speedY
 * 类型: Number
 * 默认值: 1.5
 * 作用: 设置动点Y轴方向运动速度,速度为以此为最大的随机数
-* 备注: 若想设置为0,请写成'0',字符串形式
+* 备注: 可以设置为0
 
 #### isHover
 * 类型: Boolean
 * 默认值: false
 * 作用: 设置鼠标在canvas上滑动时,是否需要与动点连线
+
+#### isClick
+* 类型: Boolean
+* 默认值: false
+* 作用: 设置鼠标在canvas上点击时,是否需要增加动点个数,个数以点击次数为准
+
+#### rebound
+* 类型: Boolean
+* 默认值: false
+* 作用: 设置是否需要动点的回弹效果,当false时则回弹,true时不回弹
+
+#### directionX
+* 类型: String
+* 默认值: 'right'
+* 作用: 设置动点运动方向 right向右移动 left向左移动
+* 备注: 此参数仅在rebound=true时,触发
+
+#### directionY
+* 类型: String
+* 默认值: 'bottom'
+* 作用: 设置动点运动方向 top向上移动 bottom向下移动
+* 备注: 此参数仅在rebound=true时,触发
 
 #### mouseLineLength
 * 类型: Number
@@ -117,6 +144,7 @@ let dotrun=new DotRun('#canvas',{
 * 默认值: '#ccc'
 * 作用: 设置动点连线颜色
 * 备注: 目前仅支持十六进制颜色样式
+
 
 ## 演示
 ![](https://github.com/fivexu/dotrun/blob/master/dotrun.jpg)
